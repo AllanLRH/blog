@@ -4,10 +4,17 @@ title: About Me
 permalink: /about/
 ---
 
-This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
+# About Me
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+I'm a 32 year old Data Scientist living in Copenhagen, Denmark.
+
+Hope you'll follow along on my blog, and fee free to reach out to me if you'd like to get in contact!
 
 
+## Me, other places on the internet
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+* [Github](https://github.com/AllanLRH)
+* [Quora](https://www.quora.com/content?content_types=answers)
+* [LinkedIn](https://www.linkedin.com/in/allanlrh/)
+* [StackOverFlow](https://stackoverflow.com/users/1623829/allanlrh)
+
