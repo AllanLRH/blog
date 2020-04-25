@@ -4,8 +4,6 @@ title: About Me
 permalink: /about/
 ---
 
-# About Me
-
 I'm a 32 year old Data Scientist living in Copenhagen, Denmark.
 
 Hope you'll follow along on my blog, and fee free to reach out to me if you'd like to get in contact!
