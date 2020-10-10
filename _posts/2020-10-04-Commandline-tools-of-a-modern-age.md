@@ -1,3 +1,15 @@
+---
+title: "Commandline tools of a modern age"
+description: "A short introduction of a few modern and very useful commandline tools"
+layout: post
+toc: true
+comments: true
+hide: false
+search_exclude: true
+categories: [commandline]
+---
+
+
 # Commandline tools of a modern age
 
 I have been using commandline tools for years, but in the past few I have grown increasingly accustomed to a new "generation" of commandline tools.
