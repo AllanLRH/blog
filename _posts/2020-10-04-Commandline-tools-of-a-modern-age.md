@@ -3,7 +3,7 @@ title: "Commandline tools of a modern age"
 description: "A short introduction of a few modern and very useful commandline tools"
 layout: post
 toc: true
-comments: false
+comments: true
 hide: true
 search_exclude: true
 categories: [commandline]
