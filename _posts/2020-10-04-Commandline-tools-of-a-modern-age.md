@@ -37,7 +37,7 @@ To search for all markdown-files containing the string _README_, we could simply
 ❯ rg -t md README
 ```
 
-![](./commandline-tools-of-a-modern-age-assets/ripgrep-markdown-search-readme.png)
+![](../images/commandline-tools-of-a-modern-age-assets/ripgrep-markdown-search-readme.png)
 
 But what file extensions are included in the markdown filter?
 Let's check:
@@ -47,7 +47,7 @@ md: *.markdown, *.md, *.mdown, *.mkdn
 ```
 
 It's also worth noticing that Ripgrep uses regular expressions by default
-![](./commandline-tools-of-a-modern-age-assets/ripgrep-markdown-regex-search.png)
+![](../images/commandline-tools-of-a-modern-age-assets/ripgrep-markdown-regex-search.png)
 
 It's a tool I use all the time, and I highlight recommend checking it out.
 The Github page gives a nice overview of it's capabilities.
@@ -67,7 +67,7 @@ But unlike the `find`-command, the options are easy to remember… Suppose we wa
 * whose name ends with _.py_ (notice that it's expressed as a regex)
 * and count the number of lines in those files by invoking the command `wc -l` on each file.
 
-![](./commandline-tools-of-a-modern-age-assets/fd-options-exec-wc.png)
+![](../images/commandline-tools-of-a-modern-age-assets/fd-options-exec-wc.png)
 
 While the long form might seem a bit slow, I find the options very easy to memorize, and in terms of speed, that beat looking them up.
 But you could of course memorize the short-hand version of the one you use the most.
@@ -90,13 +90,13 @@ l='exa --long --git --ignore-glob "._*" --color-scale --header --group-directori
 la='exa --all --long --git --ignore-glob "._*" --color-scale --header --group-directories-first'
 ```
 
-![](./commandline-tools-of-a-modern-age-assets/exa-black.png)
+![](../images/commandline-tools-of-a-modern-age-assets/exa-black.png)
 
 I like how it's use of color enables me to quickly scan the screen to find the information I'm looking for, be it file-permissions or file-size.
 Using the tool, I get the feeling that the use of color is a carefully applied in order to convey the information on the screen to the user the most convenient way possible.
 
 The capabilities of exa goes a bit beyond that of `ls`, as it can also draw the file-trees:
-![](./commandline-tools-of-a-modern-age-assets/exa-tree.png)
+![](../images/commandline-tools-of-a-modern-age-assets/exa-tree.png)
 
 
 ### [`fzf`](https://github.com/junegunn/fzf)
@@ -109,7 +109,7 @@ Think of it as an interactive version of `grep`, where you don't have to spell t
 By itself `fzf` isn't that useful, but it elevates the interactiveness and user experience a lot of other commandline tools.
 
 Below is an example where I use `fzf` to filter my command history — see the [`fzf` Github Wiki](https://github.com/junegunn/fzf/wiki) for setup instructions:
-![](./commandline-tools-of-a-modern-age-assets/fzf-history-search.gif) 
+![](../images/commandline-tools-of-a-modern-age-assets/fzf-history-search.gif) 
 
 
 ### [`tokei`](https://github.com/XAMPPRocky/tokei) (implemented in Rust)
@@ -118,7 +118,7 @@ _Git-aware statistics for code._
 
 Count number of lines, filetypes comments... useful when you encounter a new codebase, and quickly need to gain an overview of the code.
 
-![](./commandline-tools-of-a-modern-age-assets/tokei-sort-lines.png)
+![](../images/commandline-tools-of-a-modern-age-assets/tokei-sort-lines.png)
 
 
 ### [Starship](https://starship.rs/) (implemented in Rust)
