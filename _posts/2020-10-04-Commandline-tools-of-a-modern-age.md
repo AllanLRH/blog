@@ -3,9 +3,11 @@
 I have been using commandline tools for years, but in the past few I have grown increasingly accustomed to a new "generation" of commandline tools.
 They differentiate themself by being optimized for ease of use rather than having a plethora of options.
 
+
 ## The tools
 
 Let's have a look at the tools, shall we?
+
 
 ### [Ripgrep](https://github.com/BurntSushi/ripgrep#ripgrep-rg) (`rg`, implenented in Rust)
 
@@ -61,6 +63,7 @@ Lastly, have a look at this gif from the README, which beautifully demonstrates 
 ![](https://raw.githubusercontent.com/sharkdp/fd/a38da63a345da0c19c8be62072759cd8a5f24df0/doc/screencast.svg)
 
 Oh, and it works on Windows too!
+
 
 ### [`exa`](https://the.exa.website/https://the.exa.website/) (implemented in Rust)
 
