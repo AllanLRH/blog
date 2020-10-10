@@ -6,7 +6,9 @@ They differentiate themself by being optimized for ease of use rather than havin
 
 ## The tools
 
-Let's have a look at the tools, shall we?
+I'm using [Zsh](https://www.zsh.org/) as my shell, and currently also using [Oh-my-Zsh](https://github.com/ohmyzsh/ohmyzsh) (though I'm considering going with a more lightweight solution).
+
+Now let's have a look at the tools, shall we?
 
 
 ### [Ripgrep](https://github.com/BurntSushi/ripgrep#ripgrep-rg) (`rg`, implenented in Rust)
@@ -83,3 +85,31 @@ Using the tool, I get the feeling that the use of color is a carefully applied i
 
 The capabilities of exa goes a bit beyond that of `ls`, as it can also draw the file-tres:
 ![](./commandline-tools-of-a-modern-age-assets/exa-tree.png)
+
+
+### [`fzf`](https://github.com/junegunn/fzf)
+
+`fzf` is a fuzzy-finder for the commandline.
+Think of it as an interactive version of `grep`, where you don't have to spell the string which you're searching for 100 % correctly... you can miss some characters here and there, and `fzf` will still include your desired result in the filtered list.
+
+By itself `fzf` isn't that useful, but it elevates the interactivenes and user experience a lot of other commandline tools.
+
+Below is an example where I use fzf to filter my command history — see the [fzf Github Wiki](https://github.com/junegunn/fzf/wiki) for setup instructions:
+![](./commandline-tools-of-a-modern-age-assets/fzf-history-search.gif) 
+
+
+### [`tokei`](https://github.com/XAMPPRocky/tokei) (implemented in Rust)
+
+Count number of lines, filetypes comments... useful when you encounter a new codebase, and quickly need to gain an overview of the code
+
+![](./commandline-tools-of-a-modern-age-assets/tokei-sort-lines.png)
+
+
+### [Starship](https://starship.rs/) (implemented in Rust)
+
+You might have noticed that I have a lot of information in my prompt; it's provided by the program Starship.
+Starship supports Bash, Fish, Zsh and Powershell.
+
+While you can configure Starship your particular needs, I've found the standard settings quite useful, and never bothered configuring it.
+
+![](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
