@@ -4,7 +4,7 @@ description: "A short introduction of a few modern and very useful commandline t
 layout: post
 toc: true
 comments: true
-hide: true
+hide: false
 search_exclude: true
 categories: [commandline]
 ---
