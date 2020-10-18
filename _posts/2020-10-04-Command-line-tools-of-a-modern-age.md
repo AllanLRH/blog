@@ -12,7 +12,7 @@ categories: [command-line]
 
 # Command line tools of a modern age
 
-I have been using command line tools for years, but in the past few I have grown increasingly accustomed to a new "generation" of command line tools.
+I used command line tools for years, but in the past few I have grown increasingly accustomed to a new "generation" of command line tools.
 They differentiate themself by being optimized for ease of use and present information in a human-friendly manner, rather than offering a plethora of options.
 
 
