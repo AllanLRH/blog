@@ -5,11 +5,13 @@ help:
 server: .FORCE
 	docker-compose down --remove-orphans || true;
 	docker-compose up
+	$(shell open -a Safari "http://127.0.0.1:4000/blog/")
 
 # start (or restart) the services in detached mode
 server-detached: .FORCE
 	docker-compose down || true;
 	docker-compose up -d
+	$(shell open -a Safari "http://127.0.0.1:4000/blog/")
 
 # build or rebuild the services WITHOUT cache
 build: .FORCE
