@@ -4,9 +4,9 @@
         "post0": {
             "title": "try, return and finally – what takes precendence?",
             "content": "I encountered some code with a structure like this one at work today: . def divide_numbers_a(a, b): try: return a / b except ZeroDivisionError: print(&quot;Bad stuff happened!&quot;) finally: print(&quot;Close database connection or something like that…&quot;) return None . On one hand, the return statement should make the function exit early when no errors are encoutered, but on the other hand, the code in the finally-clause should always run – which value will be returned? . If the function indeed returns within the try-block, and the except-block is only reached when an exception is thrown and interceptet, is the finally-block reached when an exception in not raised? . def divide_numbers_b(a, b): try: return a / b except ZeroDivisionError: print(&quot;Bad stuff happened!&quot;) finally: print(&quot;Close database connection or something like that…&quot;) return None . Let&#39;s try and see what happens! . print(f&#39;{divide_numbers_a(1, 1)=}&#39;, end=&#39; n&#39;*2) print(f&#39;{divide_numbers_a(1, 0)=}&#39;, end=&#39; n&#39;*2) print(f&#39;{divide_numbers_b(1, 1)=}&#39;, end=&#39; n&#39;*2) print(f&#39;{divide_numbers_b(1, 0)=}&#39;, end=&#39; n&#39;*2) . Close database connection or something like that… divide_numbers_a(1, 1)=None Bad stuff happened! Close database connection or something like that… divide_numbers_a(1, 0)=None Close database connection or something like that… divide_numbers_b(1, 1)=1.0 Bad stuff happened! Close database connection or something like that… divide_numbers_b(1, 0)=None . So apparently finally-block are executed before the function returns, and including a return-statement there will cause return-statement in the try-block to be bypassed. . But placing a return statement at the end of the function definition and outside the try-except-finally block will still work for returning a default value, since it will only be reached if no other return-statements are executed. .",
-            "url": "https://allanlrh.github.io/blog/python/2021/04/22/Try-Finally-Return.html",
-            "relUrl": "/python/2021/04/22/Try-Finally-Return.html",
-            "date": " • Apr 22, 2021"
+            "url": "https://allanlrh.github.io/blog/python/2021/05/10/Try-Finally-Return.html",
+            "relUrl": "/python/2021/05/10/Try-Finally-Return.html",
+            "date": " • May 10, 2021"
         }
         
     
