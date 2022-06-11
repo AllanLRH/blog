@@ -74,7 +74,7 @@ But you could of course memorize the short-hand version of the one you use the m
 
 If you find yourself googling the command line options for the `find`-command, you should give `fd` a chance.
 Lastly, have a look at this gif from the README, which beautifully demonstrates `fd`:
-![](https://raw.githubusercontent.com/sharkdp/fd/a38da63a345da0c19c8be62072759cd8a5f24df0/doc/screencast.svg)
+![Screenshot from the project repo.](https://raw.githubusercontent.com/sharkdp/fd/a38da63a345da0c19c8be62072759cd8a5f24df0/doc/screencast.svg)
 
 Oh, and it works on Windows too!
 
@@ -130,4 +130,23 @@ Starship supports Bash, Fish, Zsh and Powershell.
 
 While you can configure Starship your particular needs, I've found the standard settings quite useful and never bothered configuring it.
 
-![](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
+![Screenshot from the project repo.](https://raw.githubusercontent.com/starship/starship/master/media/demo.gif)
+
+### [McFly](https://github.com/cantino/mcfly) (implemented in Rust)
+
+_Ctrl+R on stereoids: search recently used commands using a TUI with recommendations ranked by a directory aware neural network_
+
+McFly is a replacement for the standard Ctrl+R commandline history search widget. Powered by a neural network, the ranking of the search results changes depending on the directory you're invoking it from.
+It's blazingly fast, doesn't mess up your history files (even though it uses SQLite for it's internal commandline history storage), and is an overall great productivity booster.
+Be sure to _disable_ fuzzy matching, as it negates the ranking of the neural network, whose ranking seems to better match what I'm looking for... but YMMW.
+
+![Screenshot from the project README.](https://github.com/cantino/mcfly/raw/master/docs/screenshot.png)
+
+### [Zoxide](https://github.com/ajeetdsouza/zoxide) (implemented in Rust)
+
+_A moden replacement for autojump, capable of acting like a standin for the regular `cd` command._
+
+Once you've visited a directory, simply run `z part_of_the_directory_name` to immedieatly change to that dir. Capable of replaceing the regular `cd` command.
+
+
+![Screenshot from the project repo.](https://github.com/ajeetdsouza/zoxide/raw/main/contrib/tutorial.webp)
