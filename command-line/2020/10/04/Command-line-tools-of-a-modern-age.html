@@ -120,6 +120,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#fzf">fzf</a></li>
 <li class="toc-entry toc-h3"><a href="#tokei-implemented-in-rust">tokei (implemented in Rust)</a></li>
 <li class="toc-entry toc-h3"><a href="#starship-implemented-in-rust">Starship (implemented in Rust)</a></li>
+<li class="toc-entry toc-h3"><a href="#mcfly-implemented-in-rust">McFly (implemented in Rust)</a></li>
+<li class="toc-entry toc-h3"><a href="#zoxide-implemented-in-rust">Zoxide (implemented in Rust)</a></li>
 </ul>
 </li>
 </ul>
@@ -189,7 +191,7 @@ But you could of course memorize the short-hand version of the one you use the m
 
 <p>If you find yourself googling the command line options for the <code class="language-plaintext highlighter-rouge">find</code>-command, you should give <code class="language-plaintext highlighter-rouge">fd</code> a chance.
 Lastly, have a look at this gif from the README, which beautifully demonstrates <code class="language-plaintext highlighter-rouge">fd</code>:
-<img src="https://raw.githubusercontent.com/sharkdp/fd/a38da63a345da0c19c8be62072759cd8a5f24df0/doc/screencast.svg" alt=""></p>
+<img src="https://raw.githubusercontent.com/sharkdp/fd/a38da63a345da0c19c8be62072759cd8a5f24df0/doc/screencast.svg" alt="Screenshot from the project repo."></p>
 
 <p>Oh, and it works on Windows too!</p>
 
@@ -245,7 +247,27 @@ Starship supports Bash, Fish, Zsh and Powershell.</p>
 
 <p>While you can configure Starship your particular needs, I’ve found the standard settings quite useful and never bothered configuring it.</p>
 
-<p><img src="https://raw.githubusercontent.com/starship/starship/master/media/demo.gif" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/starship/starship/master/media/demo.gif" alt="Screenshot from the project repo."></p>
+
+<h3 id="mcfly-implemented-in-rust">
+<a class="anchor" href="#mcfly-implemented-in-rust" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/cantino/mcfly">McFly</a> (implemented in Rust)</h3>
+
+<p><em>Ctrl+R on stereoids: search recently used commands using a TUI with recommendations ranked by a directory aware neural network</em></p>
+
+<p>McFly is a replacement for the standard Ctrl+R commandline history search widget. Powered by a neural network, the ranking of the search results changes depending on the directory you’re invoking it from.
+It’s blazingly fast, doesn’t mess up your history files (even though it uses SQLite for it’s internal commandline history storage), and is an overall great productivity booster.
+Be sure to <em>disable</em> fuzzy matching, as it negates the ranking of the neural network, whose ranking seems to better match what I’m looking for… but YMMW.</p>
+
+<p><img src="https://github.com/cantino/mcfly/raw/master/docs/screenshot.png" alt="Screenshot from the project README."></p>
+
+<h3 id="zoxide-implemented-in-rust">
+<a class="anchor" href="#zoxide-implemented-in-rust" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/ajeetdsouza/zoxide">Zoxide</a> (implemented in Rust)</h3>
+
+<p><em>A moden replacement for autojump, capable of acting like a standin for the regular <code class="language-plaintext highlighter-rouge">cd</code> command.</em></p>
+
+<p>Once you’ve visited a directory, simply run <code class="language-plaintext highlighter-rouge">z part_of_the_directory_name</code> to immedieatly change to that dir. Capable of replaceing the regular <code class="language-plaintext highlighter-rouge">cd</code> command.</p>
+
+<p><img src="https://github.com/ajeetdsouza/zoxide/raw/main/contrib/tutorial.webp" alt="Screenshot from the project repo."></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
